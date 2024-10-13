@@ -1,0 +1,122 @@
+/* =======================
+   General Styles
+======================= */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2e8b57;
+}
+
+.form-container {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #2e8b57;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #3cb371;
+    outline: none;
+}
+
+button {
+    background-color: #2e8b57;
+    color: #fff;
+    margin-top: 5px;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #246b45;
+}
+
+.hidden {
+    display: none;
+}
+
+/* =======================
+   Admin & User Interfaces
+======================= */
+#adminDashboard, #userDashboard {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+table, th, td {
+    border: 1px solid #2e8b57;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+#logoutBtn, #logoutBtnUser {
+    float: right;
+    background-color: #d9534f;
+}
+
+#logoutBtn:hover, #logoutBtnUser:hover {
+    background-color: #c9302c;
+}
+
+/* =======================
+   Responsive Design
+======================= */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #logoutBtn, #logoutBtnUser {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
